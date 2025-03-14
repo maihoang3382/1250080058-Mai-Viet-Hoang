@@ -1,0 +1,22 @@
+package demo.kethua;
+import java.util.Scanner;
+
+public class HinhTru extends HinhTron {
+    public float cao;
+
+    public HinhTru() {
+        ten = "hinh tru";
+    }
+
+    public void nhapCao(Scanner scanner) {
+        nhapBanKinh(scanner);
+        System.out.print("cao = ");
+        cao = scanner.nextFloat();
+    }
+
+    public void tinhTheTich() {
+        tinhDienTich();
+        thetich = cao * dientich;
+    }
+}
+
