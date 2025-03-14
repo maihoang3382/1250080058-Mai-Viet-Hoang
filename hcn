@@ -1,0 +1,26 @@
+package demo.kethua;
+import java.util.Scanner;
+
+public class HinhChuNhat extends HinhHoc {
+    public float dai, rong;
+
+    public HinhChuNhat() {
+        ten = "hình chu nhat";
+    }
+
+    public void nhapDai(Scanner scanner) {
+        System.out.print("dai = ");
+        dai = scanner.nextFloat();
+    }
+
+    public void nhapRong(Scanner scanner) {
+        System.out.print("rong = ");
+        rong = scanner.nextFloat();
+    }
+    public void tinhChuVi() {
+        chuvi = 2 * (dai + rong);
+    }
+    public void tinhDienTich() {
+        dientich = dai * rong;
+    }
+}
