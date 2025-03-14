@@ -1,0 +1,21 @@
+package demo.kethua;
+import java.util.Scanner;
+
+public class HinhTron extends HinhHoc {
+    public float banKinh;
+
+    public HinhTron() {
+        ten = "hinh tron";
+    }
+
+    public void nhapBanKinh(Scanner scanner) {
+        System.out.print("ban kinh = ");
+        banKinh = scanner.nextFloat();
+    }
+    public void tinhChuVi() {
+        chuvi = 2 * PI * banKinh;
+    }
+    public void tinhDienTich() {
+        dientich = PI * banKinh * banKinh;
+    }
+}
